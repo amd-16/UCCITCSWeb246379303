@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: white;
   margin: 0;
   padding: 0;
 }
@@ -10,7 +10,7 @@ h1, p {
 }
 
 form {
-  background: white;
+  background: skyblue;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
@@ -31,12 +31,32 @@ input, select, textarea, button {
   border: 1px solid #ccc;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+#submit {
+    color: black;
+}
+
 button {
-  background: #4CAF50;
+  background: gold;
   color: white;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 button:hover {
-  background: #45a049;
+  background: goldenrod;
 }
